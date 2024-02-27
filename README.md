@@ -165,7 +165,5 @@ Once you are done with your APIs, open Postman and start testing them. If you do
 
 The high-level architecture style is the overview of any software. In this particular scenario, the high-level architecture depicts the flow of the services and APIs to make the system work.
 
-![High Level Architecture Diagram](images/high-level-architecture.png)
-
-The image shows the high-level architecture of implementing REST API.
+![High Level Architecture Diagram](images/high-level-diagram.png)
 
