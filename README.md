@@ -122,8 +122,6 @@ For this documentation, I have used Eclipse IDE, an IDE similar to STS. Always r
 5. Browse for the path where the project is located and then hit Finish
 6. The IDE will load all the dependencies, files, and necessary items needed for the project's working
 
-Once the project is loaded and opens in Eclipse IDE, it is now ready to use and explore. For GUI screens refer to [Appendix B](#appendix-b).
-
 #### Classes
 
 ##### Model-View-Controller
