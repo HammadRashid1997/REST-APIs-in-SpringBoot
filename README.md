@@ -1,5 +1,3 @@
-# RESTful APIs and Spring Boot Guide
-
 <p align="center">
   <img src="./images/springboot1.png" alt="Spring Boot">
 </p>
