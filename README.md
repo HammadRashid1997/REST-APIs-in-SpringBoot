@@ -6,6 +6,8 @@ An introduction to REST APIs in SpringBoot.
 
 ## RESTful APIs and Spring Boot Guide
 
+![SpringBoot](./images/springboot.jpg)
+
 ### Abstract
 
 In today's interconnected world, REST APIs have become the backbone of modern web and mobile applications, facilitating seamless communication between various software components. At the heart of building robust and efficient RESTful services stands Spring Boot, a powerful and developer-friendly framework. Spring Boot's simplicity and convention-over-configuration approach make it the go-to choice for creating RESTful APIs effortlessly. In this guide, we delve into the world of RESTful architecture and Spring Boot, exploring how they work together to empower developers in crafting high-performance web services. We begin by defining what a REST API is and how it operates. We then explore the advantages and disadvantages of using an H2 in-memory database in Spring Boot applications. Next, we introduce the Spring Boot Initializer, a powerful tool for simplifying project setup and dependency management. Additionally, we discuss the selection of an Integrated Development Environment (IDE) for Spring Boot development, providing insights into commonly used IDEs. The guide concludes with instructions on how to open a Spring Boot project, run the application, and utilize Postman for API testing.
