@@ -6,7 +6,9 @@ An introduction to REST APIs in SpringBoot.
 
 ## RESTful APIs and Spring Boot Guide
 
-![SpringBoot](./images/springboot.jpg)
+<p align="center">
+  <img src="./images/springboot.png" alt="Spring Boot">
+</p>
 
 ### Abstract
 
