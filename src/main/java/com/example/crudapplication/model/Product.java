@@ -3,86 +3,53 @@ package com.example.crudapplication.model;
 import java.math.BigDecimal;
 import java.sql.Date;
 
+import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import lombok.Data;
 
+/**
+ * Product entity with Lombok annotations for reduced boilerplate code.
+ */
+@Data  // Lombok annotation to generate getters, setters, toString, equals, and hashCode methods
 @Entity
 @Table(name = "Products")
 public class Product {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
+
 	private String name;
 	private String description;
 	private BigDecimal price;
-	
-	@CreationTimestamp
+
+	@CreationTimestamp  // Automatically sets the createdAt field to the current date and time
 	private Date createdAt;
-	@CreationTimestamp
+
+	@UpdateTimestamp  // Automatically updates the updatedAt field to the current date and time
 	private Date updatedAt;
-	   
-	public long getId() {
-		return id;
-	}
-	public void setId(long id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
-	}
-	public BigDecimal getPrice() {
-		return price;
-	}
-	public void setPrice(BigDecimal price) {
-		this.price = price;
-	}
-	public Date getCreatedAt() {
-		return createdAt;
-	}
-	public void setCreatedAt(Date createdAt) {
-		this.createdAt = createdAt;
-	}
-	public Date getUpdatedAt() {
-		return updatedAt;
-	}
-	public void setUpdatedAt(Date updatedAt) {
-		this.updatedAt = updatedAt;
-	}
-	
-	public Product(long id, String name, String description, BigDecimal price, Date createdAt, Date updatedAt) {
-		super();
+
+	/**
+	 * Constructor with all fields.
+	 *
+	 * @param id          The product ID
+	 * @param name        The product name
+	 * @param description The product description
+	 * @param price       The product price
+	 */
+	public Product(long id, String name, String description, BigDecimal price) {
 		this.id = id;
 		this.name = name;
 		this.description = description;
 		this.price = price;
-		this.createdAt = createdAt;
-		this.updatedAt = updatedAt;
 	}
-	
-	@Override
-	public String toString() {
-		return "Product [id=" + id + ", name=" + name + ", description=" + description + ", price=" + price
-				+ ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + "]";
-	}
-	
+
+	/**
+	 * Default constructor.
+	 */
 	public Product() {
-		super();
 	}
-	
-	
+
 }
