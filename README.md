@@ -160,4 +160,3 @@ The high-level architecture style is the overview of any software. In this parti
 <p align="center">
   <img src="./images/high-level-diagram.png" alt="High Level Diagram">
 </p>
-
